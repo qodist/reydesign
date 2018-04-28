@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../assets/binary-code.png');
+    font-family: 'Days One', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+/*************** logo *********************/
+
+.logo-box {
+    margin: 0 auto;
+}
+
+.logo img {
+    margin-top: 30px;
+    width: 250px;
+}
+
+/*************** construction notice *********************/
+
+.notice {
+    margin: 50px auto;
+    padding: 20px;
+    width: 500px;
+    height: 250px;
+    border-bottom: solid 5px #D8007A;
+    border-left: solid 5px #D8007A;
+    background-color: white;
+}
+
+.notice h2 {
+    text-align: center;
+}
+
+.notice p {
+    margin: 20px;
+}
+
+/*************** email button *********************/
+
+.mailto{
+    text-align: center;
+    line-height: 100%;
+    display:block;
+    margin: 40px auto;
+    background: #D8007A;
+    width:250px;
+    height:50px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, .2);
+            box-shadow: 0 6px 6px rgba(0, 0, 0, .2);
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+.mailto:hover {
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+            box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+    -webkit-transform: translateY(3px);
+        -ms-transform: translateY(3px);
+            transform: translateY(3px);
+}
+
+.mailto:active {
+    -webkit-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+            transform: translateY(6px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.mailto a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 50px;
+}
+
+.mailto a:active {
+    color: #fff;
+}
+
+.mailto a:visited {
+    color: #fff;
+}
+
+/*************** animation *********************/
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: #D8007A;
+    border-radius: 50px;
+}
