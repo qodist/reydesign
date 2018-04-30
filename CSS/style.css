@@ -5,12 +5,12 @@ body {
 /************* NAVBAR *************/
 
 .navbar-brand img {
-    width: 100px;
+    width: 25%;
 }
 
-.navbar-light .navbar-nav .active>.nav-link {
+/* .navbar-light .navbar-nav .active>.nav-link {
     color: #D8007A;
-}
+} */
 
 .navbar-nav, .ml-auto {
     margin-right: 5%;
@@ -52,18 +52,24 @@ li {
 #services h3 {
     text-align: center;
     margin: 6rem;
+    color: #33b5e5;
 }
 
-#services .card {
+.card-deck .card {
     margin: 0 5%;
 }
 
-#services .material-icons {
+.card-deck .material-icons {
     margin: 2rem;
     font-size: 4rem;
     color: #555;
 }
 
-#services .card-highlight i {
+.card-deck .card-highlight i {
     color: #fff;
+}
+
+.card-highlight .card-footer {
+    background-color: red;
+    border-top: white 2px solid;
 }
