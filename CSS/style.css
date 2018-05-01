@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    font-family: 'Days One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /************* NAVBAR *************/
@@ -60,66 +60,155 @@ li {
 
 main h2 {
     text-align: center;
-    margin: 2rem;
+    font-size: 3rem;
+    margin: 4rem;
 }
 
-.services {
+#services {
     text-align: center;
 }
 
-.service-box {
+.service {
+    text-align: center;
     display: inline-block;
     width: 22%;
     margin: 1%;
-    border: solid;
+    vertical-align: middle;
+    border-radius: .5rem;
 }
 
-.service-box ul {
+.service ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: left;
 }
 
-.basic--header {
-    background-color: #555;
-    color: #fff;
-}
-
-.basic--footer {
-    background-color: #555;
-    color: #fff;
-}
-
-.standard--header {
-    background-color: #D8007A;
-    color: #fff;
-}
-
-.standard--footer {
-    background-color: #D8007A;
-    color: #fff;
-}
-
-.pro--header {
-    background-color: #333;
-    color: #fff;
-}
-
-.pro--footer {
-    background-color: #333;
-    color: #fff;
-}
-
-.manager--header {
-    background-color: #69bd45;
-    color: #fff;
-}
-
-.manager--footer {
-    background-color: #69bd45;
-    color: #fff;
-}
-
-.service-box--body li {
+.service li {
     text-transform: uppercase;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+}
+
+.service li span {
+    padding-right: 1rem;
+}
+
+.service__basic {
+    border: #555 solid 2px;
+}
+
+.service__basic--header {
+    background-color: #555;
+    color: #fff;
+}
+
+.service__basic--body i {
+    font-size: 1.3rem;
+    color: #555;
+}
+
+.service__basic--footer {
+    background-color: #555;
+    color: #fff;
+    height: 100%;
+    padding: .5rem;
+}
+
+.service__standard {
+    border: #D8007A solid 2px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .2);
+}
+
+.service__standard--header {
+    background-color: #D8007A;
+    color: #fff;
+}
+
+.service__standard--body i {
+    font-size: 1.3rem;
+    color: #D8007A;
+}
+
+.service__standard--footer {
+    background-color: #D8007A;
+    color: #fff;
+    height: 100%;
+    padding: .5rem;
+}
+
+.service__pro {
+    border: #333 solid 2px;
+}
+
+.service__pro--header {
+    background-color: #333;
+    color: #fff;
+}
+
+.service__pro--body i {
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.service__pro--footer {
+    background-color: #333;
+    color: #fff;
+    height: 100%;
+    padding: .5rem;
+}
+
+.service__manager {
+    border: #69bd45 solid 2px;
+}
+
+.service__manager--header {
+    background-color: #69bd45;
+    color: #fff;
+}
+
+.service__manager--body i {
+    font-size: 1.3rem;
+    color: #69bd45;
+}
+
+.service__manager--footer {
+    background-color: #69bd45;
+    color: #fff;
+    height: 100%;
+    padding: .5rem;
+}
+
+.service__basic--header h3,
+.service__standard--header h3,
+.service__pro--header h3,
+.service__manager--header h3 {
+    font-size: 3rem;
+    padding-top: 1rem;
+    text-transform: uppercase;
+}
+
+.service__basic--header h4,
+.service__standard--header h4,
+.service__pro--header h4,
+.service__manager--header h4 {
+    font-size: 1rem;
+    padding: 0 0 1rem 0;
+    text-transform: uppercase;
+}
+
+.service__basic--header p,
+.service__standard--header p,
+.service__pro--header p,
+.service__manager--header p {
+    font-size: .8rem;
+    padding: .5rem;
+}
+
+.service__basic--body p,
+.service__standard--body p,
+.service__pro--body p,
+.service__manager--body p {
+    font-size: .7rem;
+    padding: .5rem;
 }
