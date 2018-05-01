@@ -1,3 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Days One', sans-serif;
 }
@@ -49,27 +58,68 @@ li {
 
 /************* SERVICES *************/
 
-#services h3 {
+main h2 {
     text-align: center;
-    margin: 6rem;
-    color: #33b5e5;
-}
-
-.card-deck .card {
-    margin: 0 5%;
-}
-
-.card-deck .material-icons {
     margin: 2rem;
-    font-size: 4rem;
-    color: #555;
 }
 
-.card-deck .card-highlight i {
+.services {
+    text-align: center;
+}
+
+.service-box {
+    display: inline-block;
+    width: 22%;
+    margin: 1%;
+    border: solid;
+}
+
+.service-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.basic--header {
+    background-color: #555;
     color: #fff;
 }
 
-.card-highlight .card-footer {
-    background-color: red;
-    border-top: white 2px solid;
+.basic--footer {
+    background-color: #555;
+    color: #fff;
+}
+
+.standard--header {
+    background-color: #D8007A;
+    color: #fff;
+}
+
+.standard--footer {
+    background-color: #D8007A;
+    color: #fff;
+}
+
+.pro--header {
+    background-color: #333;
+    color: #fff;
+}
+
+.pro--footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.manager--header {
+    background-color: #69bd45;
+    color: #fff;
+}
+
+.manager--footer {
+    background-color: #69bd45;
+    color: #fff;
+}
+
+.service-box--body li {
+    text-transform: uppercase;
 }
