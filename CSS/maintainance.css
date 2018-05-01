@@ -4,43 +4,49 @@
 }
 
 body {
-    background-image: url('../assets/binary-code.png');
-    font-family: 'Days One', sans-serif;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    font-family: 'Days One', sans-serif;    
 }
 
 .container {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0 auto;
-    flex: 1 1 100%;
-    width: 100%;
-    max-width: 600px;
-    padding: 0 20px;
+    background: url('../assets/binary-code.png') repeat-x;
+    height: 100vh;
+    width: 5076px;
+    -webkit-animation: slide 200s linear infinite;
+            animation: slide 200s linear infinite;
+    position: relative;
 }
+
+main {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    text-align: center;
+}
+
+  @-webkit-keyframes slide{
+    0%{
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    100%{
+      -webkit-transform: translate3d(-1692px, 0, 0);
+              transform: translate3d(-1692px, 0, 0);
+    }
+  }
+
+  @keyframes slide{
+    0%{
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    100%{
+      -webkit-transform: translate3d(-1692px, 0, 0);
+              transform: translate3d(-1692px, 0, 0);
+    }
+  }
 
 /*************** logo *********************/
 
