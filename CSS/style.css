@@ -73,7 +73,7 @@ main h2 {
     display: inline-block;
     width: 22%;
     margin: 1%;
-    vertical-align: middle;
+    vertical-align: top;
     border-radius: .5rem;
 }
 
@@ -84,99 +84,30 @@ main h2 {
     text-align: left;
 }
 
-.service li {
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    line-height: 1.3rem;
-}
-
-.service li span {
-    padding-right: 1rem;
-}
-
 .service__basic {
     border: #555 solid 2px;
 }
 
-.service__basic--header {
-    background-color: #555;
-    color: #fff;
-}
-
-.service__basic--body i {
-    font-size: 1.3rem;
-    color: #555;
-}
-
-.service__basic--footer {
-    background-color: #555;
-    color: #fff;
-    height: 100%;
-    padding: .5rem;
-}
-
 .service__standard {
     border: #D8007A solid 2px;
-    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .2);
-}
-
-.service__standard--header {
-    background-color: #D8007A;
-    color: #fff;
-}
-
-.service__standard--body i {
-    font-size: 1.3rem;
-    color: #D8007A;
-}
-
-.service__standard--footer {
-    background-color: #D8007A;
-    color: #fff;
-    height: 100%;
-    padding: .5rem;
 }
 
 .service__pro {
     border: #333 solid 2px;
 }
 
-.service__pro--header {
-    background-color: #333;
-    color: #fff;
-}
-
-.service__pro--body i {
-    font-size: 1.3rem;
-    color: #333;
-}
-
-.service__pro--footer {
-    background-color: #333;
-    color: #fff;
-    height: 100%;
-    padding: .5rem;
-}
-
 .service__manager {
     border: #69bd45 solid 2px;
 }
 
+/************* SERVICES CARD HEADER *************/
+
+.service__basic--header,
+.service__standard--header,
+.service__pro--header,
 .service__manager--header {
-    background-color: #69bd45;
     color: #fff;
-}
-
-.service__manager--body i {
-    font-size: 1.3rem;
-    color: #69bd45;
-}
-
-.service__manager--footer {
-    background-color: #69bd45;
-    color: #fff;
-    height: 100%;
-    padding: .5rem;
+    min-height: 250px;
 }
 
 .service__basic--header h3,
@@ -184,6 +115,7 @@ main h2 {
 .service__pro--header h3,
 .service__manager--header h3 {
     font-size: 3rem;
+    font-weight: bold;
     padding-top: 1rem;
     text-transform: uppercase;
 }
@@ -202,7 +134,42 @@ main h2 {
 .service__pro--header p,
 .service__manager--header p {
     font-size: .8rem;
-    padding: .5rem;
+    padding: 1rem;
+    text-align: left;
+}
+
+.service__basic--header {
+    background-color: #555;
+    color: #fff;
+}
+
+.service__standard--header {
+    background-color: #D8007A;
+    color: #fff;
+}
+
+.service__pro--header {
+    background-color: #333;
+    color: #fff;
+}
+
+.service__manager--header {
+    background-color: #69bd45;
+    color: #fff;
+}
+
+/************* SERVICES CARD BODY *************/
+
+.service li {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    padding-bottom: .2rem;
+    padding-top: 0;
+}
+
+.service li span {
+    padding-right: 3rem;
 }
 
 .service__basic--body p,
@@ -210,5 +177,160 @@ main h2 {
 .service__pro--body p,
 .service__manager--body p {
     font-size: .7rem;
+    margin: 0;
+    padding: 0 .8rem 0 5.9rem;
+}
+
+.service__basic--body .disclaimer,
+.service__standard--body .disclaimer,
+.service__pro--body .disclaimer,
+.service__manager--body .disclaimer {
+    padding: 1rem;
+    text-align: left;
+}
+
+.service__basic--body i,
+.service__standard--body i,
+.service__pro--body i,
+.service__manager--body i {
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.service__basic--body i {
+    color: #555;
+}
+
+.service__standard--body i {
+    color: #D8007A;
+}
+
+.service__pro--body i {
+    color: #333;
+}
+
+.service__manager--body i {
+    color: #69bd45;
+}
+
+/************* SERVICES CARD FOOTER *************/
+
+.service__basic--footer,
+.service__standard--footer,
+.service__pro--footer,
+.service__manager--footer {
+    height: 100%;
     padding: .5rem;
+}
+
+.service__basic--footer a,
+.service__standard--footer a,
+.service__pro--footer a,
+.service__manager--footer a {
+    text-decoration: none;
+}
+
+/* .service__basic--footer a:active,
+.service__standard--footer a:active,
+.service__pro--footer a:active,
+.service__manager--footer a:active,
+.service__basic--footer a:visited,
+.service__standard--footer a:visited,
+.service__pro--footer a:visited,
+.service__manager--footer a:visited {
+    text-decoration: none;
+} */
+
+.service__basic--footer button,
+.service__standard--footer button,
+.service__pro--footer button,
+.service__manager--footer button {
+    margin: 1rem;
+    padding: .5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.service__basic--footer {
+    background-color: #555;
+    color: #fff;
+}
+
+.service__basic--footer button {
+    background-color: #555;
+    color: #fff;
+    border: solid #fff 4px;
+}
+
+.service__basic--footer button:hover {
+    background-color: #fff;
+    color: #555;
+    border: solid #fff 4px;
+}
+
+.service__standard--footer button {
+    background-color: #D8007A;
+    color: #fff;
+    border: solid #fff 4px;
+}
+
+.service__standard--footer button:hover {
+    background-color: #fff;
+    color: #D8007A;
+    border: solid #fff 4px;
+}
+
+.service__pro--footer button {
+    background-color: #333;
+    color: #fff;
+    border: solid #fff 4px;
+}
+
+.service__pro--footer button:hover {
+    background-color: #fff;
+    color: #333;
+    border: solid #fff 4px;
+}
+
+.service__manager--footer button {
+    background-color: #69bd45;
+    color: #fff;
+    border: solid #fff 4px;
+}
+
+.service__manager--footer button:hover {
+    background-color: #fff;
+    color: #69bd45;
+    border: solid #fff 4px;
+}
+
+.service__standard--footer {
+    background-color: #D8007A;
+    color: #fff;
+}
+
+.service__pro--footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.service__manager--footer {
+    background-color: #69bd45;
+    color: #fff;
+}
+
+/************* ABOUT US SECTION *************/
+
+.partners-logo {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/************* ABOUT US SECTION *************/
+
+footer {
+    font-size: .8rem;
+    padding: 8rem 2rem 1rem 2rem;
 }
