@@ -58,7 +58,7 @@ li {
 
 /************* SERVICES *************/
 
-main h2 {
+.section-title {
     text-align: center;
     font-size: 3rem;
     margin: 4rem;
@@ -249,8 +249,11 @@ main h2 {
     padding: .5rem 2rem;
     border: none;
     border-radius: 5px;
+    font: inherit;
     font-size: 1.4rem;
     font-weight: bold;
+    cursor: pointer;
+    outline: none;
 }
 
 .service__basic--footer {
@@ -326,11 +329,89 @@ main h2 {
 .partners-logo {
     text-align: center;
     margin-top: 4rem;
+    margin-bottom: 3rem;
 }
 
-/************* ABOUT US SECTION *************/
+.key-features {
+    background-color: #96bf48;
+    color: #fff;
+}
 
-footer {
+.key-features__title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem 0 1rem 0;
+}
+
+.key-features__sub-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.key-features__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.key-feature {
+    display: inline-block;
+    width: 30%;
+}
+
+.key-feature__img {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    border: solid 2px green;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.key-feature__description {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 3rem;
+}
+
+/************* FOOTER SECTION *************/
+
+.main-footer {
     font-size: .8rem;
-    padding: 8rem 2rem 1rem 2rem;
+    padding: 1rem;
+    background-color: #D8007A;
+    color: #fff;
+}
+
+.main-footer__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center
+}
+
+.main-footer__link {
+    display: inline-block;
+    margin: 0 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.main-footer__link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-footer__link a:active,
+.main-footer__link a:hover {
+    color: #ccc;
+}
+
+.main-footer__credit,
+.main-footer__credit a,
+.main-footer__credit a:active,
+.main-footer__credit a:visited {
+    font-weight: normal;
+    color: #444;    
 }
