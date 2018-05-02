@@ -100,7 +100,7 @@ main h2 {
     border: #69bd45 solid 2px;
 }
 
-/************* SERVICES CARD HEADER *************/
+/************* SERVICES HEADER *************/
 
 .service__basic--header,
 .service__standard--header,
@@ -158,7 +158,7 @@ main h2 {
     color: #fff;
 }
 
-/************* SERVICES CARD BODY *************/
+/************* SERVICES BODY *************/
 
 .service li {
     text-transform: uppercase;
@@ -213,7 +213,7 @@ main h2 {
     color: #69bd45;
 }
 
-/************* SERVICES CARD FOOTER *************/
+/************* SERVICES FOOTER *************/
 
 .service__basic--footer,
 .service__standard--footer,
