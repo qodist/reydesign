@@ -490,3 +490,9 @@ li {
     outline: none;
     transition: background-color ease-out 1s;
 }
+
+.alert {
+    display: none;
+    background-color: green;
+    color: #fff;
+}
