@@ -1,0 +1,257 @@
+/************* SERVICES *************/
+
+#services {
+    text-align: center;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    /* padding-top: 5rem; */
+    margin: 4rem;
+}
+
+.service {
+    text-align: center;
+    display: inline-block;
+    width: 22%;
+    margin: 1%;
+    vertical-align: top;
+    border-radius: .5rem;
+}
+
+.service ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.service__basic {
+    border: #555 solid 2px;
+}
+
+.service__standard {
+    border: #D8007A solid 2px;
+}
+
+.service__pro {
+    border: #333 solid 2px;
+}
+
+.service__manager {
+    border: #69bd45 solid 2px;
+}
+
+/************* SERVICES HEADER *************/
+
+.service__basic--header,
+.service__standard--header,
+.service__pro--header,
+.service__manager--header {
+    color: #fff;
+    min-height: 250px;
+}
+
+.service__basic--header h3,
+.service__standard--header h3,
+.service__pro--header h3,
+.service__manager--header h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    text-transform: uppercase;
+}
+
+.service__basic--header h4,
+.service__standard--header h4,
+.service__pro--header h4,
+.service__manager--header h4 {
+    font-size: 1rem;
+    padding: 0 0 1rem 0;
+    text-transform: uppercase;
+}
+
+.service__basic--header p,
+.service__standard--header p,
+.service__pro--header p,
+.service__manager--header p {
+    font-size: .8rem;
+    padding: 1rem;
+    text-align: left;
+}
+
+.service__basic--header {
+    background-color: #555;
+    color: #fff;
+}
+
+.service__standard--header {
+    background-color: #D8007A;
+    color: #fff;
+}
+
+.service__pro--header {
+    background-color: #333;
+    color: #fff;
+}
+
+.service__manager--header {
+    background-color: #69bd45;
+    color: #fff;
+}
+
+/************* SERVICES BODY *************/
+
+.service li {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    padding-bottom: .2rem;
+    padding-top: 0;
+}
+
+.service li span {
+    padding-right: 3rem;
+}
+
+.service__basic--body p,
+.service__standard--body p,
+.service__pro--body p,
+.service__manager--body p {
+    font-size: .7rem;
+    margin: 0;
+    padding: 0 .8rem 0 5.9rem;
+}
+
+.service__basic--body .disclaimer,
+.service__standard--body .disclaimer,
+.service__pro--body .disclaimer,
+.service__manager--body .disclaimer {
+    padding: 1rem;
+    text-align: left;
+}
+
+.service__basic--body i,
+.service__standard--body i,
+.service__pro--body i,
+.service__manager--body i {
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.service__basic--body i {
+    color: #555;
+}
+
+.service__standard--body i {
+    color: #D8007A;
+}
+
+.service__pro--body i {
+    color: #333;
+}
+
+.service__manager--body i {
+    color: #69bd45;
+}
+
+/************* SERVICES FOOTER *************/
+
+.service__basic--footer,
+.service__standard--footer,
+.service__pro--footer,
+.service__manager--footer {
+    height: 100%;
+    padding: .5rem;
+}
+
+.service__basic--footer a,
+.service__standard--footer a,
+.service__pro--footer a,
+.service__manager--footer a {
+    text-decoration: none;
+}
+
+.service__basic--footer button,
+.service__standard--footer button,
+.service__pro--footer button,
+.service__manager--footer button {
+    margin: 1rem;
+    padding: .5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font: inherit;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+.service__basic--footer {
+    background-color: #555;
+    color: #fff;
+}
+
+.service__basic--footer button {
+    background-color: #555;
+    color: #fff;
+    border: solid #fff 4px;
+}
+
+.service__basic--footer button:hover {
+    background-color: #fff;
+    color: #555;
+    border: solid #fff 4px;
+}
+
+.service__standard--footer button {
+    background-color: #D8007A;
+    color: #fff;
+    border: solid #fff 4px;
+}
+
+.service__standard--footer button:hover {
+    background-color: #fff;
+    color: #D8007A;
+    border: solid #fff 4px;
+}
+
+.service__pro--footer button {
+    background-color: #333;
+    color: #fff;
+    border: solid #fff 4px;
+}
+
+.service__pro--footer button:hover {
+    background-color: #fff;
+    color: #333;
+    border: solid #fff 4px;
+}
+
+.service__manager--footer button {
+    background-color: #69bd45;
+    color: #fff;
+    border: solid #fff 4px;
+}
+
+.service__manager--footer button:hover {
+    background-color: #fff;
+    color: #69bd45;
+    border: solid #fff 4px;
+}
+
+.service__standard--footer {
+    background-color: #D8007A;
+    color: #fff;
+}
+
+.service__pro--footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.service__manager--footer {
+    background-color: #69bd45;
+    color: #fff;
+}
