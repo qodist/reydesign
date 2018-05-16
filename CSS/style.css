@@ -46,10 +46,6 @@ li {
     margin-left: 1rem;
 }
 
-.main-nav {
-    display: none;
-}
-
 .main-nav__items {
     list-style: none;
     padding: 0;
@@ -77,62 +73,12 @@ li {
 }
 
 @media (min-width: 40rem) {
-    .main-nav {
-        display: block;
-    }
-} */
-
-/************* HAMBURGER TOGGLE BUTTON *************/
-
-/* .container {
-    display: inline-block;
-    position: relative;
-    top: 0;
-    right: 1rem;
-    width: 4rem;
-    margin: 0;
-    cursor: pointer;
-    z-index: 100;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #D8007A;
-    margin: 6px 0;
-    transition: 0.4s;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
-}
-
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
-
-@media (min-width: 40rem) {
-    .container {
-        display: none;
+    .main-header {
+        display: flex;
     }
 } */
 
 /************* MOBILE NAV *************/
-
-/* .mobile-nav {
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    width: 60%;
-    background-color: #fff;
-    height: 100vh;
-} */
 
 .mobile-nav {
     
@@ -152,6 +98,8 @@ li {
     right: 4rem;
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, .2);
+    text-align: center;
+    cursor: pointer;
 }
 
 .mobile-nav__background {
@@ -203,7 +151,7 @@ li {
     text-decoration: none;
     text-transform: uppercase;
     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
-    background-size: 220%;
+    background-size: 240%;
     transition: all .4s;
 }
 
@@ -221,6 +169,58 @@ li {
 .mobile-nav__checkbox:checked ~ .mobile-nav__nav {
     opacity: 1;
     width: 100%;
+}
+
+.mobile-nav__icon {
+    position: relative;
+    margin-top: 2.5rem;
+}
+
+.mobile-nav__icon,
+.mobile-nav__icon::before,
+.mobile-nav__icon::after {
+    width: 2rem;
+    height: 2px;
+    background-color: #333;
+    display: inline-block;
+}
+
+.mobile-nav__icon::before,
+.mobile-nav__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s;
+}
+
+.mobile-nav__icon::before {
+    top: -.8rem;
+}
+
+.mobile-nav__icon::after {
+    top: .8rem;
+}
+
+.mobile-nav__button:hover .mobile-nav__icon::before {
+    top: -1rem;
+}
+
+.mobile-nav__button:hover .mobile-nav__icon::after {
+    top: 1rem;
+}
+
+.mobile-nav__checkbox:checked + .mobile-nav__button .mobile-nav__icon {
+    background-color: transparent;
+}
+
+.mobile-nav__checkbox:checked + .mobile-nav__button .mobile-nav__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.mobile-nav__checkbox:checked + .mobile-nav__button .mobile-nav__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
 }
 
 /************* CAROUSEL *************/

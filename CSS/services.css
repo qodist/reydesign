@@ -2,6 +2,9 @@
 
 #services {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .section-title {
@@ -11,10 +14,10 @@
     margin: 4rem;
 }
 
-.service {
-    text-align: center;
-    display: inline-block;
-    width: 22%;
+article.service {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
     margin: 1%;
     vertical-align: top;
     border-radius: .5rem;
@@ -45,40 +48,32 @@
 
 /************* SERVICES HEADER *************/
 
-.service__basic--header,
-.service__standard--header,
-.service__pro--header,
-.service__manager--header {
+.service__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20rem;
     color: #fff;
-    min-height: 250px;
 }
 
-.service__basic--header h3,
-.service__standard--header h3,
-.service__pro--header h3,
-.service__manager--header h3 {
+.service__header h3 {
     font-size: 3rem;
     font-weight: bold;
     padding-top: 1rem;
     text-transform: uppercase;
 }
 
-.service__basic--header h4,
-.service__standard--header h4,
-.service__pro--header h4,
-.service__manager--header h4 {
+.service__header h4 {
     font-size: 1rem;
     padding: 0 0 1rem 0;
     text-transform: uppercase;
 }
 
-.service__basic--header p,
-.service__standard--header p,
-.service__pro--header p,
-.service__manager--header p {
+.service__header p {
     font-size: .8rem;
     padding: 1rem;
-    text-align: left;
+    text-align: center;
 }
 
 .service__basic--header {
@@ -106,38 +101,47 @@
 .service li {
     text-transform: uppercase;
     font-size: 1.3rem;
+    font-weight: bold;
+    color: #444;
     line-height: 1.3rem;
-    padding-bottom: .2rem;
+    padding-bottom: .3rem;
     padding-top: 0;
 }
 
-.service li span {
-    padding-right: 3rem;
+.service__body {
+    display: flex;
+    flex-direction: column;
+    height: 32rem;
 }
 
-.service__basic--body p,
-.service__standard--body p,
-.service__pro--body p,
-.service__manager--body p {
+.service__body--container {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    grid-template-rows: 100% 50%;
+    margin-top: 1rem;
+}
+
+.service__body--icon {
+    font-size: 2rem;
+    grid-column: 1 / 2;
+    grid-row: 1 / span 2;
+    width: 2rem;
+    padding: 0 1rem 0 .5rem;
+    align-self: center;
+}
+
+.service__body--info {
+    padding-left: 1rem;
+}
+
+.service__body p {
     font-size: .7rem;
     margin: 0;
-    padding: 0 .8rem 0 5.9rem;
 }
 
-.service__basic--body .disclaimer,
-.service__standard--body .disclaimer,
-.service__pro--body .disclaimer,
-.service__manager--body .disclaimer {
+.service__body .disclaimer {
     padding: 1rem;
     text-align: left;
-}
-
-.service__basic--body i,
-.service__standard--body i,
-.service__pro--body i,
-.service__manager--body i {
-    font-size: 2rem;
-    vertical-align: middle;
 }
 
 .service__basic--body i {

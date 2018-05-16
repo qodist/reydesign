@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReyDesign Web Development</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
     <link type="text/css" rel="stylesheet" href="./CSS/style.css">
     <link type="text/css" rel="stylesheet" href="./CSS/contact.css">
     <link type="text/css" rel="stylesheet" href="./CSS/services.css">
@@ -16,43 +17,24 @@
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>  
 <body>
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"><img src="assets/logo_trans3.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent fixed">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about-us">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav> -->
     <div class="mobile-nav">
         <input type="checkbox" class="mobile-nav__checkbox" id="navi-toggle">
 
-        <label for="navi-toggle" class="mobile-nav__button">MENU</label>
+        <label for="navi-toggle" class="mobile-nav__button"><span class="mobile-nav__icon">&nbsp;</span></label>
 
         <div class="mobile-nav__background">&nbsp;</div>
 
         <nav class="mobile-nav__nav">
             <ul class="mobile-nav__list">
-                <li class="mobile-nav__item"><a href="#services" class="mobile-nav__link">Services</a></li>
+                <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__link">Home</a></li>
+                <li class="mobile-nav__item"><a href="#services-top" class="mobile-nav__link">Services</a></li>
                 <li class="mobile-nav__item"><a href="#about-us" class="mobile-nav__link">About Us</a></li>
                 <li class="mobile-nav__item"><a href="#contact" class="mobile-nav__link">Contact</a></li>
             </ul>
         </nav>
     </div>
-    <header class="main-header">
-        <!-- <div>
+    <!-- <header class="main-header">
+        <div>
             <a href="index.html" class="main-header__brand">
                 <img src="assets/logo_trans2.png" alt="ReyDesign - Ecommerce Web Developers and Shopify Partners">
             </a>
@@ -69,27 +51,8 @@
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
-        </nav> -->
-        
-        <!-- <div class="container" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div> -->
-    </header>
-    <!-- <div class="mobile-nav">
-        <ul class="mobile-nav__items">
-            <li class="mobile-nav__item">
-                <a href="#services">Services</a>
-            </li>
-            <li class="mobile-nav__item">
-                <a href="#about-us">About Us</a>
-            </li>
-            <li class="mobile-nav__item">
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </div> -->
+        </nav>
+    </header> -->
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -116,27 +79,39 @@
         </div>
     </div>
     <main>
+        <h2 class="section-title" id="services-top">Services</h2>
         <section id="services">
-            <h2 class="section-title">Services</h2>
             <article class="service service__basic">
-                <div class="service__basic--header">
+                <div class="service__header service__basic--header">
                     <h3>Basic</h3>
                     <h4>Minor site edits</h4>
                     <p>For existing Shopify stores that need minor tweaks and modifications to an existing design such as changing the fonts and color scheme throughout the site or minor alterations to images etc.</p>
                 </div>
-                <div class="service__basic--body">
+                <div class="service__body service__basic--body">
                     <ul>
-                        <li><span><i class="ion-ios-checkmark"></i></span>Minor edits</li>
-                        <p>Small changes to an existing Shopify store</p>
+                        <div class="service__body--container">
+                            <div class="service__body--icon"><i class="ion-ios-checkmark"></i></div>
+                            <li class="service__body--info">Minor edits</li>
+                            <p class="service__body--info">Small changes to an existing Shopify store</p> 
+                        </div>
                         <hr>
-                        <li><span><i class="ion-ios-checkmark"></i></span>Fast delivery</li>
-                        <p>Quick turnaround times. 1-3 Days.</p>
+                        <div class="service__body--container">
+                            <div class="service__body--icon"><i class="ion-ios-checkmark"></i></div>
+                            <li class="service__body--info">Fast delivery</li>
+                            <p class="service__body--info">Quick turnaround times. 1-3 Days.</p> 
+                        </div>
                         <hr>
-                        <li><span><i class="ion-ios-close"></i></span>Products</li>
-                        <p>No products added</p>
+                        <div class="service__body--container">
+                            <div class="service__body--icon"><i class="ion-ios-close"></i></div>
+                            <li class="service__body--info">Products</li>
+                            <p class="service__body--info">No products added</p> 
+                        </div>
                         <hr>
-                        <li><span><i class="ion-ios-close"></i></span>Pages</li>
-                        <p>No additional pages created</p>
+                        <div class="service__body--container">
+                            <div class="service__body--icon"><i class="ion-ios-close"></i></div>
+                            <li class="service__body--info">Pages</li>
+                            <p class="service__body--info">No additional pages created</p> 
+                        </div>
                         <hr>
                     </ul>
                     <p class="disclaimer">No additional pages created or products added. No changes to the code base - for that enquire about custom packages. Package refers to changes on an existing Shopify store such as font styles, color scheme, basic image edit. Ask for further details.</p>
@@ -146,24 +121,36 @@
                 </div>
             </article>
             <article class="service service__standard">
-                <div class="service__standard--header">
+                <div class="service__header service__standard--header">
                     <h3>Standard</h3>
                     <h4>Small store</h4>
                     <p>Ideal for new entrepreneurs or to online selling as well as small businesses and people with small inventories. Quick turnaround time.</p>
                 </div>
-                <div class="service__standard--body">
+                <div class="service__body service__standard--body">
                     <ul>
-                        <li><span><i class="ion-ios-checkmark"></i></span>Products</li>
-                        <p>20 products added and sorted into collections</p>
+                        <div class="service__body--container">
+                            <div class="service__body--icon"><i class="ion-ios-checkmark"></i></div>
+                            <li class="service__body--info">Products</li>
+                            <p class="service__body--info">20 products added and sorted into collections</p> 
+                        </div>
                         <hr>
-                        <li><span><i class="ion-ios-checkmark"></i></span>Pages</li>
-                        <p>We can create as many as 6 pages for your site</p>
+                        <div class="service__body--container">
+                            <div class="service__body--icon"><i class="ion-ios-checkmark"></i></div>
+                            <li class="service__body--info">Pages</li>
+                            <p class="service__body--info">We can create as many as 6 pages for your site</p> 
+                        </div>
                         <hr>
-                        <li><span><i class="ion-ios-checkmark"></i></span>Fast delivery</li>
-                        <p>Quick turnaround times. 3-5 Days.</p>
+                        <div class="service__body--container">
+                            <div class="service__body--icon"><i class="ion-ios-checkmark"></i></div>
+                            <li class="service__body--info">Fast delivery</li>
+                            <p class="service__body--info">Quick turnaround times. 3-5 Days.</p> 
+                        </div>
                         <hr>
-                        <li><span><i class="ion-ios-close"></i></span>Blog setup</li>
-                        <p>See Pro package for blog creation</p>
+                        <div class="service__body--container">
+                            <div class="service__body--icon"><i class="ion-ios-close"></i></div>
+                            <li class="service__body--info">Blog setup</li>
+                            <p class="service__body--info">See Pro package for blog creation</p> 
+                        </div>
                         <hr>
                     </ul>
                     <p class="disclaimer">No changes to the code base - for that enquire about custom packages. Package refers to creation of a basic Shopify store or modifying an existing store. Ask for further details.</p>
@@ -173,24 +160,36 @@
                 </div>
             </article>
             <article class="service service__pro">
-                <div class="service__pro--header">
+                <div class="service__header service__pro--header">
                     <h3>Pro</h3>
                     <h4>Medium store</h4>
                     <p>Ideal for medium sized businesses and for entrepreneurs with some experience of online selling. Comes with a blog for creative sellers who would like to build a bigger online presence.</p>
                 </div>
-                <div class="service__pro--body">
+                <div class="service__body service__pro--body">
                     <ul>
-                        <li><span><i class="ion-ios-checkmark"></i></span>Products</li>
-                        <p>50 products added and sorted into collections</p>
+                        <div class="service__body--container">
+                            <div class="service__body--icon"><i class="ion-ios-checkmark"></i></div>
+                            <li class="service__body--info">Products</li>
+                            <p class="service__body--info">50 products added and sorted into collections</p> 
+                        </div>
                         <hr>
-                        <li><span><i class="ion-ios-checkmark"></i></span>Pages</li>
-                        <p>We can create as many as 12 pages for your site</p>
+                        <div class="service__body--container">
+                            <div class="service__body--icon"><i class="ion-ios-checkmark"></i></div>
+                            <li class="service__body--info">Pages</li>
+                            <p class="service__body--info">We can create as many as 12 pages for your site</p> 
+                        </div>
                         <hr>
-                        <li><span><i class="ion-ios-checkmark"></i></span>Blog setup</li>
-                        <p>Blog creation and styling to match the store</p>
+                        <div class="service__body--container">
+                            <div class="service__body--icon"><i class="ion-ios-checkmark"></i></div>
+                            <li class="service__body--info">Blog setup</li>
+                            <p class="service__body--info">Blog creation and styling to match the store</p> 
+                        </div>
                         <hr>
-                        <li><span><i class="ion-ios-checkmark"></i></span>Fast delivery</li>
-                        <p>Quick turnaround times. 2-3 Weeks.</p>
+                        <div class="service__body--container">
+                            <div class="service__body--icon"><i class="ion-ios-checkmark"></i></div>
+                            <li class="service__body--info">Fast delivery</li>
+                            <p class="service__body--info">Quick turnaround times. 2-3 Weeks.</p> 
+                        </div>
                         <hr>
                     </ul>
                     <p class="disclaimer">No changes to the code base - for that enquire about custom packages. Package refers to creation of a medium sized Shopify store or modifying an existing store. Ask for further details.</p>
@@ -200,24 +199,36 @@
                 </div>
             </article>
             <article class="service service__manager">
-                <div class="service__manager--header">
+                <div class="service__header service__manager--header">
                     <h3>Manager</h3>
                     <h4>Store keeper</h4>
                     <p>This is the ideal package for busy Shopify owners who don't have time for the upkeep of their store. We'll take care of the day-to-day admin and keep on top of site maintenance. DISCOUNT GIVEN FOR MULTIPLE STORES.</p>
                 </div>
-                <div class="service__manager--body">
+                <div class="service__body service__manager--body">
                     <ul>
-                        <li><span><i class="ion-ios-checkmark"></i></span>Email monitoring</li>
-                        <p>Respond to customer emails</p>
+                        <div class="service__body--container">
+                            <div class="service__body--icon"><i class="ion-ios-checkmark"></i></div>
+                            <li class="service__body--info">Email monitoring</li>
+                            <p class="service__body--info">Respond to customer emails</p> 
+                        </div> 
                         <hr>
-                        <li><span><i class="ion-ios-checkmark"></i></span>Order processing</li>
-                        <p>Order processing and handling. Invoices, shipping and sales.</p>
+                        <div class="service__body--container">
+                            <div class="service__body--icon"><i class="ion-ios-checkmark"></i></div>
+                            <li class="service__body--info">Order processing</li>
+                            <p class="service__body--info">Order processing and handling. Invoices, shipping and sales.</p>
+                        </div>
                         <hr>
-                        <li><span><i class="ion-ios-checkmark"></i></span>Site maintenance</li>
-                        <p>General site upkeep and maintenance.</p>
+                        <div class="service__body--container">
+                            <div class="service__body--icon"><i class="ion-ios-checkmark"></i></div>
+                            <li class="service__body--info">Site maintenance</li>
+                            <p class="service__body--info">General site upkeep and maintenance.</p>
+                        </div>
                         <hr>
-                        <li><span><i class="ion-ios-checkmark"></i></span>Product listing</li>
-                        <p>Adding new products, removing old ones and changes to existing products.</p>
+                        <div class="service__body--container">
+                            <div class="service__body--icon"><i class="ion-ios-checkmark"></i></div>
+                            <li class="service__body--info">Product listing</li>
+                            <p class="service__body--info">Adding new products, removing old ones and changes to existing products.</p>
+                        </div>
                         <hr>
                     </ul>
                     <p class="disclaimer">Package is for ongoing shop maintenance. Does NOT include changes to the code base, SEO and Marketing, page creation or site modifications and/or fixes. *Billed monthly</p>                </div>
