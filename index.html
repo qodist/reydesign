@@ -7,13 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReyDesign Web Development</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
     <link type="text/css" rel="stylesheet" href="./CSS/style.css">
     <link type="text/css" rel="stylesheet" href="./CSS/contact.css">
     <link type="text/css" rel="stylesheet" href="./CSS/services.css">
     <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>  
 <body>
@@ -33,26 +30,7 @@
             </ul>
         </nav>
     </div>
-    <!-- <header class="main-header">
-        <div>
-            <a href="index.html" class="main-header__brand">
-                <img src="assets/logo_trans2.png" alt="ReyDesign - Ecommerce Web Developers and Shopify Partners">
-            </a>
-        </div>
-        <nav class="main-nav">
-            <ul class="main-nav__items">
-                <li class="main-nav__item">
-                    <a href="#services">Services</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#about-us">About Us</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header> -->
+    
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -208,25 +186,25 @@
                     <ul>
                         <div class="service__body--container">
                             <div class="service__body--icon"><i class="ion-ios-checkmark"></i></div>
-                            <li class="service__body--info">Email monitoring</li>
+                            <li class="service__body--info">Customer Service</li>
                             <p class="service__body--info">Respond to customer emails</p> 
                         </div> 
                         <hr>
                         <div class="service__body--container">
                             <div class="service__body--icon"><i class="ion-ios-checkmark"></i></div>
-                            <li class="service__body--info">Order processing</li>
+                            <li class="service__body--info">Processing</li>
                             <p class="service__body--info">Order processing and handling. Invoices, shipping and sales.</p>
                         </div>
                         <hr>
                         <div class="service__body--container">
                             <div class="service__body--icon"><i class="ion-ios-checkmark"></i></div>
-                            <li class="service__body--info">Site maintenance</li>
+                            <li class="service__body--info">Maintenance</li>
                             <p class="service__body--info">General site upkeep and maintenance.</p>
                         </div>
                         <hr>
                         <div class="service__body--container">
                             <div class="service__body--icon"><i class="ion-ios-checkmark"></i></div>
-                            <li class="service__body--info">Product listing</li>
+                            <li class="service__body--info">Listing</li>
                             <p class="service__body--info">Adding new products, removing old ones and changes to existing products.</p>
                         </div>
                         <hr>
@@ -273,22 +251,21 @@
                 <h3>Contact Form</h3>
                 <div class="alert">Your message has been sent, thank you.</div>
                 <form id="contactForm">
-                    <!-- VALIDATION @TODO -->
                     <p>
                         <label>Name</label>
-                        <input type="text" name="name" id="name">
-                    </p>
-                    <p>
-                        <label>Address</label>
-                        <input type="text" name="address" id="address">
+                        <input type="text" name="name" id="name" required>
                     </p>
                     <p>
                         <label>Phone</label>
                         <input type="text" name="phone" id="phone">
                     </p>
                     <p>
-                        <label>Email Address</label>
-                        <input type="text" name="email" id="email">
+                        <label>Address</label>
+                        <input type="text" name="address" id="address">
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input type="text" name="email" id="email" required>
                     </p>
                     <p class="full">
                         <label>Message</label>

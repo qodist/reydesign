@@ -1,12 +1,5 @@
 /************* SERVICES *************/
 
-#services {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
 .section-title {
     text-align: center;
     font-size: 3rem;
@@ -14,13 +7,39 @@
     margin: 4rem;
 }
 
+#services {
+    text-align: center;
+}
+
 article.service {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: 1%;
-    vertical-align: top;
-    border-radius: .5rem;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+@media (min-width: 44rem) {
+    article.service {
+        display: inline-block;
+        width: 45%;
+        margin: 1rem;
+    }
+}
+
+@media (min-width: 75rem) {
+    #services {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    article.service {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 1%;
+        vertical-align: top;
+        border-radius: .5rem;
+    }
 }
 
 .service ul {
@@ -53,8 +72,20 @@ article.service {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 20rem;
+    height: 18rem;
     color: #fff;
+}
+
+@media (min-width: 44rem) {
+    .service__header {
+        height: 15rem;
+    }
+}
+
+@media (min-width: 75rem) {
+    .service__header {
+        height: 20rem;
+    }
 }
 
 .service__header h3 {
@@ -111,7 +142,7 @@ article.service {
 .service__body {
     display: flex;
     flex-direction: column;
-    height: 32rem;
+    height: 30rem;
 }
 
 .service__body--container {
@@ -126,12 +157,38 @@ article.service {
     grid-column: 1 / 2;
     grid-row: 1 / span 2;
     width: 2rem;
-    padding: 0 1rem 0 .5rem;
+    padding: 0 1rem 0 1.5rem;
     align-self: center;
 }
 
 .service__body--info {
-    padding-left: 1rem;
+    padding-left: 3rem;
+}
+
+@media (min-width: 25rem) {
+    .service__body {
+        height: 28rem;
+    }
+}
+
+@media (min-width: 44rem) {
+    .service__body {
+        height: 29rem;
+    }
+    
+.service__body--icon {
+    padding: 0 1rem 0 .5rem;
+}
+
+    .service__body--info {
+        padding-left: 1rem;
+    }
+}
+
+@media (min-width: 75rem) {
+    .service__body {
+        height: 32rem;
+    }
 }
 
 .service__body p {

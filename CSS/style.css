@@ -11,73 +11,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/************* NAVBAR *************/
-
-/* .navbar-brand img {
-    width: 25%;
-} */
-
-/* .navbar-light .navbar-nav .active>.nav-link {
-    color: #D8007A;
-} */
-
-/* .navbar-nav, .ml-auto {
-    margin-right: 5%;
-}
-
-li {
-    padding: 20px;
-} */
-
-/* .main-header {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    background-color: #fff;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 5rem;
-}
-
-.main-header__brand img {
-    height: 3rem;
-    margin-left: 1rem;
-}
-
-.main-nav__items {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.main-nav__item {
-    margin: 0 3rem 0 0;
-}
-
-.main-nav__item a {
-    text-decoration: none;
-    color: #D8007A;
-    font-weight: bold;
-    padding: .5rem;
-}
-
-.main-nav__item a:hover,
-.main-nav__item a:active {
-    color: #fff;
-    background-color: #D8007A;
-    padding: .5rem;
-    border-radius: .5rem;
-}
-
-@media (min-width: 40rem) {
-    .main-header {
-        display: flex;
-    }
-} */
-
 /************* MOBILE NAV *************/
 
 .mobile-nav {
@@ -253,7 +186,7 @@ li {
 
 @media (min-width: 40rem) {
     .carousel img {
-        height: 85vh;
+        height: 100vh;
     }
 
     .carousel h5 {
@@ -280,16 +213,16 @@ li {
 /************* ABOUT US SECTION *************/
 
 #about-us {
-    /* padding-top: 3.5rem; */
 }
 
 .partners-logo {
     text-align: center;
-    margin-top: 4rem;
+    padding-top: 5rem;
     margin-bottom: 3rem;
 }
 
 .key-features {
+    width: 100vw;
     background-color: #96bf48;
     color: #fff;
 }
@@ -307,14 +240,20 @@ li {
 
 .key-features__list {
     list-style: none;
-    padding: 0;
+    padding: 1rem;
     margin: 0;
     text-align: center;
 }
 
 .key-feature {
-    display: inline-block;
-    width: 30%;
+    display: block;
+}
+
+@media (min-width: 44rem) {  
+    .key-feature {
+        display: inline-block;
+        width: 30%;
+    }
 }
 
 .key-feature__img {

@@ -5,6 +5,7 @@
 }
 
 .contact__container {
+    height: 90vh;
     background-color: #D8007A;
     padding: 3rem;
 }
@@ -34,12 +35,21 @@
 }
 
 .contact form {
-    display: grid;
+    /* display: grid; */
     background-color: #fff;
-    grid-template-columns: 1fr;
-    grid-gap: .5rem;
+    /* grid-template-columns: 1fr;
+    grid-gap: .5rem; */
     border-radius: 5px;
-    
+}
+
+@media (min-width: 44rem) {
+    .contact form {
+        display: grid;
+        background-color: #fff;
+        grid-template-columns: 1fr;
+        grid-gap: .5rem;
+        border-radius: 5px;
+    }
 }
 
 .contact form label {
