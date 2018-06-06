@@ -249,6 +249,22 @@ body {
     display: block;
 }
 
+.key-feature__headline {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 3rem;
+}
+
+.key-feature__description {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.key-feature--icon i {
+    font-size: 4rem;
+    color: greenyellow;
+}
+
 @media (min-width: 44rem) {  
     .key-feature {
         display: inline-block;
@@ -265,10 +281,18 @@ body {
     margin: 0 auto;
 }
 
+.key-features__list {
+    display: flex;
+    justify-content: center;
+}
+
+.key-feature {
+    display: flex;
+    flex-direction: column;
+}
+
 .key-feature__description {
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin: 3rem;
+
 }
 
 /************* FOOTER SECTION *************/
